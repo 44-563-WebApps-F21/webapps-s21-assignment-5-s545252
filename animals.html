@@ -18,25 +18,42 @@
 </head>
 
 <body>
-    <p>Letters picked from my last Name - D,U,L,G,N,T</p>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-2">D</div>
-            <div class="col-sm-2">U</div>
-            <div class="col-sm-2">L</div>
-            <div class="col-sm-2">G</div>
-            <div class="col-sm-2">N</div>
-            <div class="col-sm-2">T</div>
+    <nav class="navbar navbar-expand-lg navbar-info bg-light">
+        <p>Letters picked from my last Name - D,U,L,G,N,T</p>
+        <div class="container">
+            <a class="navbar-brand" href="animals.html">Interesting Animals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="Plane.html">Plane</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="train.html">Train</a>
+                </li>
+    </nav>
+    <div class="row">
+        <div class="col-sm-2">D</div>
+        <div class="col-sm-2">U</div>
+        <div class="col-sm-2">L</div>
+        <div class="col-sm-2">G</div>
+        <div class="col-sm-2">N</div>
+        <div class="col-sm-2">T</div>
 
-        </div>
-        <div class="row">
-            <div class="col-md">Dog</div>
-            <div class="col-md">Uakari</div>
-            <div class="col-md">Lion</div>
-            <div class="col-md">Goat</div>
-            <div class="col-md">Numbat</div>
-            <div class="col-md">Tiger</div>
-        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">Dog</div>
+        <div class="col-md">Uakari</div>
+        <div class="col-md">Lion</div>
+        <div class="col-md">Goat</div>
+        <div class="col-md">Numbat</div>
+        <div class="col-md">Tiger</div>
+    </div>
     </div><br>
     <p> The Row which contains animal names breaks first.</p>
     <p>The reason for this is, grid system of letters and animals
@@ -63,6 +80,7 @@
     <br>
     <table class="table caption-top table-bordered table-hover table-striped table-sm table-success"
         style="width: 800px; height: 300px; margin-left: auto; margin-right: auto">
+
         <caption> List of letters picked</caption>
         <thead>
             <tr>
@@ -121,22 +139,51 @@
     <br></br>
 
     <nav class="navbar navbar-light bg-light">
-        <div class="btn-toolbar" role="toolbar" >
+        <div class="btn-toolbar" role="toolbar">
             <div class="btn-group me-1" role="group" aria-label="success button group">
                 <button type="button" class="btn btn-success">D</button>
                 <button type="button" class="btn btn-success">L</button>
                 <button type="button" class="btn btn-success">T</button>
             </div>
-            <br>
             <div class="btn-group me-2" role="group" aria-label="warning button group">
                 <button type="button" class="btn btn-warning">G</button>
                 <button type="button" class="btn btn-warning">N</button>
             </div>
-            <br>
             <div class="btn-group me-3" role="group" aria-label="danger button group">
                 <button type="button" class="btn btn-danger">U</button>
             </div>
         </div>
+    </nav>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Select Page
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="plane.html">Plane Page</a></li>
+            <li><a class="dropdown-item" href="train.html">Train Page</a></li>
+        </ul>
+    </div>
+    <br>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter your E-mail">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.
+        </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Animal</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your animal">
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
     </nav>
 </body>
 
